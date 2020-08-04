@@ -12,7 +12,7 @@ const HrCss = styled.hr`
   margin-top: 1rem;
   margin-bottom: 1rem;
   border: 0;
-  border-top: 1px solid #333;
+  border-top: 1.3px solid #eee;
   width: 100%;
 `;
 

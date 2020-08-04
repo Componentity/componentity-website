@@ -18,7 +18,7 @@ const HoverLinkCss = styled(Link)`
   }
   :hover {
     transition: all .5s;
-    color: #dc3545 !important;
+    color: #9B5DE5 !important;
     text-decoration: none;
   }
 `;

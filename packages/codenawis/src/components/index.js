@@ -16,7 +16,7 @@ import Footer from './footer';
 const Theme = ({ state }) => {
   // Get information about the current URL.
   const data = state.source.get(state.router.link);
-
+  console.log(data);
   return (
     <>
       {/* Add some metatags to the <head> of the HTML. */}
@@ -31,10 +31,8 @@ const Theme = ({ state }) => {
       <Global styles={globalStyles} />
 
       {/* Add the header of the site. */}
-      <HeadContainer>
         <Header />
-      </HeadContainer>
-
+    
       {/* Add the main section. It renders a different component depending
       on the type of URL we are in. */}
       <Main>
@@ -57,11 +55,14 @@ const globalStyles = css`
   * {
     box-sizing: border-box;
   }
+  html {
+    scroll-behavior: smooth;
+  }
   body {
   margin: 0;
   font-family: "Poppins", Roboto,
     "Droid Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
-    background-color: #f8f9fa;
+    background-color: white;
   }
   a,
   a:visited {
@@ -70,6 +71,8 @@ const globalStyles = css`
   }
   a:hover {
     text-decoration: none;
+    color: #9B5DE5;
+    transition: all .5s;
   }
   .section {
     box-shadow: 0px 0px 20px #00000008;
@@ -103,10 +106,6 @@ const globalStyles = css`
       color: #efefef;
     }
   }
-`;
-
-const HeadContainer = styled.div`
-  background-color: black;
 `;
 
 const Main = styled.div`

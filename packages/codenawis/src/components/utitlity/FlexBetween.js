@@ -15,7 +15,6 @@ const FlexBetweenCss = styled.div`
   display: flex;
   flex-direction: row;
   justify-content: space-between;
-  align-items: start;
   gap: 20px;
   &.column {
     flex-direction: column;

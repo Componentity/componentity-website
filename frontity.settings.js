@@ -2,9 +2,9 @@ const settings = {
   "name": "CodeNawis - Fashion Jackson",
   "state": {
     "frontity": {
-      "url": "https://newschin.mymakarim.vercel.app",
-      "title": "CodeNawis",
-      "description": "A NextJs clone of FashionJackson.com"
+      "url": "https://componentity.com",
+      "title": "Componentity",
+      "description": "Thousands of Components Ready to be Copy-Pasted"
     }
   },
   "packages": [
@@ -18,36 +18,16 @@ const settings = {
               "/"
             ],
             [
-              "Casual",
-              "/category/outfits/casual/"
+              "Support Us",
+              "/support"
             ],
             [
-              "Collage",
-              "/category/collage/"
+              "Contributing",
+              "/contributing"
             ],
             [
-              "Fashion",
-              "/category/fashion/"
-            ],
-            [
-              "Beauty",
-              "/category/beauty/"
-            ],
-            [
-              "Black Blazer",
-              "/category/black-blazer/"
-            ],
-            [
-              "External Link",
-              "https://github.com/mymakarim"
-            ],
-            [
-              "About Us",
-              "/about"
-            ],
-            [
-              "Contact Us",
-              "/contact"
+              "Blog",
+              "/category/blog"
             ]
           ],
           "featured": {
@@ -61,7 +41,7 @@ const settings = {
       "name": "@frontity/wp-source",
       "state": {
         "source": {
-          "api": "https://fashionjackson.com/wp-json"
+          "api": "http://codenawis.com/componentity/wp-json"
         }
       }
     },

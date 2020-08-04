@@ -1,8 +1,8 @@
 import { styled } from "frontity";
 
-const Container = ({children}) => {
+const Container = ({children, classes}) => {
     return (
-        <ContainerWrapper>
+        <ContainerWrapper className={classes}>
             {children}
         </ContainerWrapper>
     )
@@ -26,10 +26,23 @@ const ContainerWrapper = styled.div`
     max-width: 960px;
   }
   @media (min-width: 1200px){
-     max-width: 1400px;
+     max-width: 1200px;
   }
   img {
     width: 100%;
+  }
+  &.py-3 {
+    padding-top: 30px;
+    padding-bottom: 30px;
+  }
+  &.py-10 {
+    padding-top: 150px;
+    padding-bottom: 150px;
+    
+    @media (max-width: 576px) {
+      padding-top: 50px;
+      padding-bottom: 50px;
+    }
   }
 `;
 

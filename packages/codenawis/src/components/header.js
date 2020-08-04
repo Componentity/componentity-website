@@ -4,24 +4,22 @@ import Link from "./link";
 import Nav from "./nav";
 import MobileMenu from "./menu";
 import Container from './utitlity/Container'
-import Hr from './utitlity/Hr'
 import Logo from './utitlity/Logo'
-import SearchForm from './SearchForm';
 
 const Header = ({ state }) => {
   return (
     <>
-      <Container>
+      <Container classes="py-3">
         <FlexBetweenCss>
           <Link link="/">
-            <Logo color="white" />
+            <Logo />
           </Link>
-          <SearchForm />
+          <Nav />
+          <a href="https://codepen.io/componentity"><b>CodePen</b></a>&nbsp;|&nbsp;
+          <a href="https://github.com/codenawis/componentity">Github</a>
         </FlexBetweenCss>
-        <Hr />
         <MobileMenu />
       </Container>
-      <Nav />
     </>
   );
 };

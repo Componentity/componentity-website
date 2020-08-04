@@ -13,6 +13,9 @@ const ColCss = styled.div`
   padding-right: 15px;
   padding-left: 15px;
 
+  margin-bottom: 15px;
+  margin-top: 15px;
+
   flex-basis: 0;
   flex-grow: 1;
   max-width: 100%;

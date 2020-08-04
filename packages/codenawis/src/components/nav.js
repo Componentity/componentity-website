@@ -14,13 +14,14 @@ const Nav = ({ state }) => (
           // Check if the link matched the current page url
           const isCurrentPage = state.router.link === link;
           return (
-            <li key={name} className="nav-item px-1" css={isCurrentPage ? css`border-bottom: 5px solid #dc3545; color: white;` : css``}>
+            <li key={name} className="nav-item px-1" css={isCurrentPage ? css`font-weight: 700; color: #9B5DE5;` : css``}>
               <Link link={link} aria-current={isCurrentPage ? "page" : undefined}>
                 <a className={isCurrentPage ? "nav-link active text-uppercase" : "nav-link text-uppercase"} >{name}</a>
               </Link>
             </li>
           );
         })}
+        
       </NavUl>
   </NavBar>
 );
@@ -37,7 +38,7 @@ position: relative;
 padding-bottom: 0!important;
 display: none;
 @media (min-width: 1200px){
-  max-width: 1400px;
+  max-width: 1200px;
 }
 @media (min-width: 992px){
   flex-flow: row nowrap;
