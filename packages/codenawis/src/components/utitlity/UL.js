@@ -10,6 +10,7 @@ const UL = ({children, className}) => {
 
 const ULCss = styled.ul`
   list-style-type: none;
+  padding: 0 !important;
   .arrow-right {
     -webkit-transform: scaleX(-1);
     transform: scaleX(-1);

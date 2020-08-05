@@ -1,29 +1,19 @@
 export const categoryWidgets = [
   {
-    id: 2189,
-    slug: "black-blazer",
+    id: 1,
+    slug: "blog",
     length: 4
   },
   {
-    id: 931,
-    slug: "beauty",
+    id: 2,
+    slug: "tailwindcss",
     length: 4
   },
   {
     id: 3,
-    slug: "fashion",
-    length: 6
-  },
-  {
-    id: 168,
-    slug: "collage",
+    slug: "tailwindcss/cards",
     length: 4
   },
-  {
-    id: 2370,
-    slug: "outfits/casual",
-    length: 6
-  }
 ];
 
 

@@ -88,6 +88,11 @@ const ColCss = styled.div`
       flex: 0 0 100%;
       max-width: 100%;
     }
+
+    &.s6 {
+      flex: 0 0 50%;
+      max-width: 50%;
+    }
   }
 `;
 export default Col

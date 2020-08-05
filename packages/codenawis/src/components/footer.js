@@ -19,7 +19,7 @@ const Footer = ({ state }) => {
             </Col>
             <Col className="m8">
               <Row>
-                <Col className="m4">
+                <Col className="m4 s6">
                   <UL>
                     <li>
                       <b>COMPANY</b>
@@ -35,7 +35,7 @@ const Footer = ({ state }) => {
                     </li>
                   </UL>
                 </Col>
-                <Col className="m4">
+                <Col className="m4 s6">
                   <UL>
                     <li>
                       <b>SUPPORT US</b>
@@ -51,7 +51,7 @@ const Footer = ({ state }) => {
                     </li>
                   </UL>
                 </Col>
-                <Col className="m4">
+                <Col className="m4 s6">
                   <UL>
                     <li>
                       <b>SOCIAL MEDIA</b>

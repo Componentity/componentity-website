@@ -1,5 +1,5 @@
 const settings = {
-  "name": "CodeNawis - Fashion Jackson",
+  "name": "Componentity - From CodeNawis",
   "state": {
     "frontity": {
       "url": "https://componentity.com",
@@ -13,21 +13,29 @@ const settings = {
       "state": {
         "theme": {
           "menu": [
-            [
-              "Home",
-              "/"
-            ],
-            [
-              "Support Us",
-              "/support"
-            ],
-            [
-              "Contributing",
-              "/contributing"
-            ],
+            // [
+            //   "Home",
+            //   "/"
+            // ],
+            // [
+            //   "Support Us",
+            //   "/support"
+            // ],
+            // [
+            //   "Contributing",
+            //   "/contributing"
+            // ],
             [
               "Blog",
               "/category/blog"
+            ],
+            [
+              "Tailwind",
+              "/category/tailwindcss"
+            ],
+            [
+              "Tailwind Cards",
+              "/category/tailwindcss/cards"
             ]
           ],
           "featured": {
@@ -41,7 +49,7 @@ const settings = {
       "name": "@frontity/wp-source",
       "state": {
         "source": {
-          "api": "http://codenawis.com/componentity/wp-json"
+          "api": "https://codenawis.com/componentity/wp-json"
         }
       }
     },

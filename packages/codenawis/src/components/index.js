@@ -16,7 +16,7 @@ import Footer from './footer';
 const Theme = ({ state }) => {
   // Get information about the current URL.
   const data = state.source.get(state.router.link);
-  console.log(data);
+  
   return (
     <>
       {/* Add some metatags to the <head> of the HTML. */}
@@ -74,10 +74,8 @@ const globalStyles = css`
     color: #9B5DE5;
     transition: all .5s;
   }
-  .section {
-    box-shadow: 0px 0px 20px #00000008;
-    background-color: white;
-    /* height: 100%; */
+  .bg-light {
+    background-color: #F9FAFB;
   }
   .p-relative {
     position: relative;
@@ -109,6 +107,5 @@ const globalStyles = css`
 `;
 
 const Main = styled.div`
-  display: flex;
-  justify-content: center;
+  display: block;
 `;

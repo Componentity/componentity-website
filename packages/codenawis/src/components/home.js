@@ -24,19 +24,19 @@ const Home = ({ state }) => {
                     <SubTitle classes="text-black mb-0" title="Just <b>Copy & Paste!!!</b>" />
                     <UL>
                       <li>
-                        <FlexCenter direction="align-left">
+                        <FlexCenter direction="justify-start align-center">
                         <svg fill="#9B5DE5" className="arrow-right" height="10px" width="10px" aria-hidden="true" focusable="false" height="12px" data-prefix="fas" data-icon="chevron-left" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 512" data-fa-i2svg=""><path d="M34.52 239.03L228.87 44.69c9.37-9.37 24.57-9.37 33.94 0l22.67 22.67c9.36 9.36 9.37 24.52.04 33.9L131.49 256l154.02 154.75c9.34 9.38 9.32 24.54-.04 33.9l-22.67 22.67c-9.37 9.37-24.57 9.37-33.94 0L34.52 272.97c-9.37-9.37-9.37-24.57 0-33.94z"></path></svg>
                         <a href="#getStarted">GetStarted</a>
                         </FlexCenter>
                       </li>
                       <li>
-                        <FlexCenter direction="align-left">
+                        <FlexCenter direction="justify-start align-center">
                         <svg fill="#9B5DE5" className="arrow-right" height="10px" width="10px" aria-hidden="true" focusable="false" height="12px" data-prefix="fas" data-icon="chevron-left" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 512" data-fa-i2svg=""><path d="M34.52 239.03L228.87 44.69c9.37-9.37 24.57-9.37 33.94 0l22.67 22.67c9.36 9.36 9.37 24.52.04 33.9L131.49 256l154.02 154.75c9.34 9.38 9.32 24.54-.04 33.9l-22.67 22.67c-9.37 9.37-24.57 9.37-33.94 0L34.52 272.97c-9.37-9.37-9.37-24.57 0-33.94z"></path></svg>
                         <HoverLink link="/shop">Eye-catching Themes</HoverLink>
                         </FlexCenter>
                       </li>
                       <li>
-                        <FlexCenter direction="align-left">
+                        <FlexCenter direction="justify-start align-center">
                         <svg fill="#9B5DE5" className="arrow-right" height="10px" width="10px" aria-hidden="true" focusable="false" height="12px" data-prefix="fas" data-icon="chevron-left" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 512" data-fa-i2svg=""><path d="M34.52 239.03L228.87 44.69c9.37-9.37 24.57-9.37 33.94 0l22.67 22.67c9.36 9.36 9.37 24.52.04 33.9L131.49 256l154.02 154.75c9.34 9.38 9.32 24.54-.04 33.9l-22.67 22.67c-9.37 9.37-24.57 9.37-33.94 0L34.52 272.97c-9.37-9.37-9.37-24.57 0-33.94z"></path></svg>
                         <HoverLink link="/contact">Enterprise Projects <sup>(Contact Us)</sup></HoverLink>
                         </FlexCenter>
@@ -56,40 +56,40 @@ const Home = ({ state }) => {
         <br/>
         <br/>
         <Row>
-          <Col className="m2">
-            <a href="#"><img src="http://codenawis.com/componentity/wp-content/uploads/2020/08/Group-3.png" alt=""/></a>
+          <Col className="m2 s6">
+            <HoverLink link="/category/tailwindcss"><img src="http://codenawis.com/componentity/wp-content/uploads/2020/08/Group-3.png" alt="TailwindCSS Ready to be copy pasted Components by Componentity.com"/></HoverLink>
           </Col>
-          <Col className="m2">
+          <Col className="m2 s6">
             <a href="#"><img src="http://codenawis.com/componentity/wp-content/uploads/2020/08/Group-2.png" alt=""/></a>
           </Col>
-          <Col className="m2">
+          <Col className="m2 s6">
             <a href="#"><img src="http://codenawis.com/componentity/wp-content/uploads/2020/08/Group-1.png" alt=""/></a>
           </Col>
-          <Col className="m2">
+          <Col className="m2 s6">
             <a href="#"><img src="http://codenawis.com/componentity/wp-content/uploads/2020/08/Group-19.png" alt=""/></a>
           </Col>
-          <Col className="m2">
+          <Col className="m2 s6">
             <a href="#"><img src="http://codenawis.com/componentity/wp-content/uploads/2020/08/Group-17.png" alt=""/></a>
           </Col>
-          <Col className="m2">
+          <Col className="m2 s6">
             <a href="#"><img src="http://codenawis.com/componentity/wp-content/uploads/2020/08/Group-16.png" alt=""/></a>
           </Col>
-          <Col className="m2">
+          <Col className="m2 s6">
             <a href="#"><img src="http://codenawis.com/componentity/wp-content/uploads/2020/08/flat550x550075f.u3.png" alt=""/></a>
           </Col>
-          <Col className="m2">
+          <Col className="m2 s6">
             <a href="#"><img src="http://codenawis.com/componentity/wp-content/uploads/2020/08/Group-15.png" alt=""/></a>
           </Col>
-          <Col className="m2">
+          <Col className="m2 s6">
             <a href="#"><img src="http://codenawis.com/componentity/wp-content/uploads/2020/08/Group-15-2.png" alt=""/></a>
           </Col>
-          <Col className="m2">
+          <Col className="m2 s6">
             <a href="#"><img src="http://codenawis.com/componentity/wp-content/uploads/2020/08/Group-15-1.png" alt=""/></a>
           </Col>
-          <Col className="m2">
+          <Col className="m2 s6">
             <a href="#"><img src="http://codenawis.com/componentity/wp-content/uploads/2020/08/Group-16-1.png" alt=""/></a>
           </Col>
-          <Col className="m2">
+          <Col className="m2 s6">
             <a href="#"><img src="http://codenawis.com/componentity/wp-content/uploads/2020/08/Group-17-1.png" alt=""/></a>
           </Col>
         </Row>

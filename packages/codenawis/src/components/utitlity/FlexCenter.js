@@ -16,16 +16,17 @@ const FlexCenterCss = styled.div`
   align-items: center;
   height: 100%;
   justify-content: center;
-  &.align-left {
-      align-items: start;
+  &.justify-start {
       justify-content: flex-start;
   }
-  &.align-right {
-    align-items: end;
+  &.justify-end {
     justify-content: flex-end;
   }
   &.column {
     flex-direction: column;
     justify-content: center;
+  }
+  &.align-center {
+    align-items: center;
   }
 `;

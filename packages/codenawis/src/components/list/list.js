@@ -6,10 +6,13 @@ import Container from '../utitlity/Container';
 import Row from '../utitlity/Row';
 import Col from '../utitlity/Col';
 import Home from '../home'
+import ComponentsPage from '../componentsPage'
 
 const List = ({ state }) => {
   // Get the data of the current list.
   const data = state.source.get(state.router.link);
+
+  console.log(data);
 
   return (
     <>
@@ -41,20 +44,26 @@ const List = ({ state }) => {
           Search Results For: <Bold>{data.searchQuery}</Bold>
         </Header>
       )}
-            <Row>
-              {data.items.map(({ type, id }) => {
-                const item = state.source[type][id];
-                // Render one Item component for each one.
-                return (
-                  <Col className="m4">
-                    <ListItemOverlay imageHeight="400px" key={item.id} item={item} />
-                  </Col>
-                );
-              })} 
-            </Row>
+
+      {data.isTaxonomy && data.taxonomy == "category" && data.route !== "/category/blog/" ? (
+        <ComponentsPage />
+      ) : 
+        <Row>
+          {data.items.map(({ type, id }) => {
+            const item = state.source[type][id];
+          // Render one Item component for each one.
+            return (
+              <Col className="m4">
+                <ListItemOverlay imageHeight="400px" key={item.id} item={item} />
+              </Col>
+            );
+          })} 
+        </Row>
+      }
           </Container>
           }
       </W100>
+
       {data.route === '/' ? null : <Pagination /> }
     </>
   );
@@ -75,3 +84,9 @@ const Bold = styled.b`
 const W100 = styled.div`
   width: 100%;
 `;
+
+const Sidebar = styled.div`
+    padding: 30px 20px;
+    min-height: 100vh;
+`;
+
