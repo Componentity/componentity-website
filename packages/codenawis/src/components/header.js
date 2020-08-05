@@ -15,8 +15,8 @@ const Header = ({ state }) => {
             <Logo />
           </Link>
           <Nav />
-          <a href="https://codepen.io/componentity"><b>CodePen</b></a>&nbsp;|&nbsp;
-          <a href="https://github.com/codenawis/componentity">Github</a>
+          <a target="_blank" href="https://codepen.io/componentity"><b>CodePen</b></a>&nbsp;|&nbsp;
+          <a target="_blank" href="https://github.com/codenawis/componentity">Github</a>
         </FlexBetweenCss>
         <MobileMenu />
       </Container>

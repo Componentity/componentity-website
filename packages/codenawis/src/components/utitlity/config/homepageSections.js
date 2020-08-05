@@ -10,10 +10,55 @@ export const categoryWidgets = [
     length: 4
   },
   {
-    id: 3,
-    slug: "tailwindcss/cards",
+    id: 5,
+    slug: "bootstrap",
     length: 4
   },
+  {
+    id: 6,
+    slug: "materializecss",
+    length: 4
+  },
+  {
+    id: 7,
+    slug: "sass",
+    length: 4
+  },
+  {
+    id: 8,
+    slug: "reactjs",
+    length: 4
+  },
+  {
+    id: 9,
+    slug: "vuejs",
+    length: 4
+  },
+  {
+    id: 10,
+    slug: "angularjs",
+    length: 4
+  },
+  {
+    id: 11,
+    slug: "sveltejs",
+    length: 4
+  },
+  {
+    id: 12,
+    slug: "wordpress",
+    length: 4
+  },
+  {
+    id: 13,
+    slug: "flutter",
+    length: 4
+  },
+  {
+    id: 14,
+    slug: "frontity",
+    length: 4
+  }
 ];
 
 

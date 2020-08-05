@@ -19,6 +19,7 @@
   "dependencies": {
     "@frontity/codenawis": "./packages/codenawis",
     "@frontity/core": "^1.7.2",
+    "@frontity/head-tags": "^1.0.4",
     "@frontity/html2react": "^1.3.4",
     "@frontity/tiny-router": "^1.2.1",
     "@frontity/wp-source": "^1.8.0",

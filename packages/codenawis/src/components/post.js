@@ -42,22 +42,6 @@ const Post = ({ state, actions, libraries }) => {
   // Load the post, but only if the data is ready.
   return data.isReady ? (
     <Container>
-    <Head>
-          <html lang="en" />
-          <meta name="description" content={state.frontity.description} />
-          
-          <meta property="og:type" content="article" />
-          <meta property="og:url" content={url + state.router.link} />
-          <meta property="og:title" content={ post.title.rendered } />
-          <meta property="og:description" content={ post.excerpt.rendered } />
-          <meta property="og:image" content={state.source.attachment[post.featured_media]?.source_url} />
-
-          <meta property="twitter:url" content={url + state.router.link} />
-          <meta property="twitter:title" content={ post.title.rendered } />
-          <meta property="twitter:description" content={ post.excerpt.rendered } />
-          <meta property="twitter:image" content={state.source.attachment[post.featured_media]?.source_url} ></meta>
-          <meta name="twitter:card" content="summary_large_image" />
-    </Head>
       <PostContainer>
       
         <Title dangerouslySetInnerHTML={{ __html: post.title.rendered }} />
@@ -67,7 +51,7 @@ const Post = ({ state, actions, libraries }) => {
             <FlexBetween>
                 {author && (
                   <FlexCenter>
-                    <Avatar src={author.avatar_urls[96]} alt=""/>
+                    <Avatar src={author.avatar_urls[96]} alt="author"/>
                     <div>
                       <Author authorId={post.author} /><br />
                       <PubDate post={post} />

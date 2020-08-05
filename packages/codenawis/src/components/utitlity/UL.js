@@ -15,6 +15,7 @@ const ULCss = styled.ul`
     -webkit-transform: scaleX(-1);
     transform: scaleX(-1);
     margin-right: 10px;
+    margin-left: 20px;
   }
   li {
     margin-bottom: 10px;

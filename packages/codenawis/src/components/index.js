@@ -24,6 +24,7 @@ const Theme = ({ state }) => {
       <Head>
         <meta name="description" content={state.frontity.description} />
         <html lang="en" />
+        <link rel="icon" type="image/png" href="http://codenawis.com/componentity/wp-content/uploads/2020/08/componentity-fav.png"></link>
       </Head>
 
       {/* Add some global styles for the whole site, like body or a's. 

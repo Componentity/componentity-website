@@ -18,7 +18,7 @@ const Home = ({ state }) => {
     <Container>
         <Row>
               <Col className="m5">
-                  <FlexCenter direction="column align-left">
+                  <FlexCenter direction="column align-start">
                     <SectionTitle>Ctrl+C - Ctrl+V</SectionTitle>
                     <SubTitle classes="mb-0" title="Dont Waste your time writing the code we have already written!" />
                     <SubTitle classes="text-black mb-0" title="Just <b>Copy & Paste!!!</b>" />
@@ -60,37 +60,37 @@ const Home = ({ state }) => {
             <HoverLink link="/category/tailwindcss"><img src="http://codenawis.com/componentity/wp-content/uploads/2020/08/Group-3.png" alt="TailwindCSS Ready to be copy pasted Components by Componentity.com"/></HoverLink>
           </Col>
           <Col className="m2 s6">
-            <a href="#"><img src="http://codenawis.com/componentity/wp-content/uploads/2020/08/Group-2.png" alt=""/></a>
+            <HoverLink HoverLink link="/category/bootstrap"><img src="http://codenawis.com/componentity/wp-content/uploads/2020/08/Group-2.png" alt="Bootstrap Ready to be copy pasted Components by Componentity.com"/></HoverLink>
           </Col>
           <Col className="m2 s6">
-            <a href="#"><img src="http://codenawis.com/componentity/wp-content/uploads/2020/08/Group-1.png" alt=""/></a>
+            <HoverLink link="/category/materializecss"><img src="http://codenawis.com/componentity/wp-content/uploads/2020/08/Group-1.png" alt="MateriallizeCSS Ready to be copy pasted Components by Componentity.com"/></HoverLink>
           </Col>
           <Col className="m2 s6">
-            <a href="#"><img src="http://codenawis.com/componentity/wp-content/uploads/2020/08/Group-19.png" alt=""/></a>
+            <HoverLink link="/category/sass"><img src="http://codenawis.com/componentity/wp-content/uploads/2020/08/Group-19.png" alt="Sass CSS Ready to be copy pasted Components by Componentity.com"/></HoverLink>
           </Col>
           <Col className="m2 s6">
-            <a href="#"><img src="http://codenawis.com/componentity/wp-content/uploads/2020/08/Group-17.png" alt=""/></a>
+            <HoverLink link="/category/reactjs"><img src="http://codenawis.com/componentity/wp-content/uploads/2020/08/Group-17.png" alt="ReactJS Ready to be copy pasted Components by Componentity.com"/></HoverLink>
           </Col>
           <Col className="m2 s6">
-            <a href="#"><img src="http://codenawis.com/componentity/wp-content/uploads/2020/08/Group-16.png" alt=""/></a>
+            <HoverLink link="/category/vuejs"><img src="http://codenawis.com/componentity/wp-content/uploads/2020/08/Group-16.png" alt="VueJS Ready to be copy pasted Components by Componentity.com"/></HoverLink>
           </Col>
           <Col className="m2 s6">
-            <a href="#"><img src="http://codenawis.com/componentity/wp-content/uploads/2020/08/flat550x550075f.u3.png" alt=""/></a>
+            <HoverLink link="/category/angularjs"><img src="http://codenawis.com/componentity/wp-content/uploads/2020/08/flat550x550075f.u3.png" alt="AngularJS Ready to be copy pasted Components by Componentity.com"/></HoverLink>
           </Col>
           <Col className="m2 s6">
-            <a href="#"><img src="http://codenawis.com/componentity/wp-content/uploads/2020/08/Group-15.png" alt=""/></a>
+            <HoverLink link="/category/sveltejs"><img src="http://codenawis.com/componentity/wp-content/uploads/2020/08/Group-15.png" alt="SvelteJS Ready to be copy pasted Components by Componentity.com"/></HoverLink>
           </Col>
           <Col className="m2 s6">
-            <a href="#"><img src="http://codenawis.com/componentity/wp-content/uploads/2020/08/Group-15-2.png" alt=""/></a>
+            <HoverLink link="/category/jquery"><img src="http://codenawis.com/componentity/wp-content/uploads/2020/08/Group-15-2.png" alt="JQuery Ready to be copy pasted Components by Componentity.com"/></HoverLink>
           </Col>
           <Col className="m2 s6">
-            <a href="#"><img src="http://codenawis.com/componentity/wp-content/uploads/2020/08/Group-15-1.png" alt=""/></a>
+            <HoverLink link="/category/wordpress"><img src="http://codenawis.com/componentity/wp-content/uploads/2020/08/Group-15-1.png" alt="Wordpress Ready to be copy pasted Components by Componentity.com"/></HoverLink>
           </Col>
           <Col className="m2 s6">
-            <a href="#"><img src="http://codenawis.com/componentity/wp-content/uploads/2020/08/Group-16-1.png" alt=""/></a>
+            <HoverLink link="/category/flutter"><img src="http://codenawis.com/componentity/wp-content/uploads/2020/08/Group-16-1.png" alt="Flutter Ready to be copy pasted Components by Componentity.com"/></HoverLink>
           </Col>
           <Col className="m2 s6">
-            <a href="#"><img src="http://codenawis.com/componentity/wp-content/uploads/2020/08/Group-17-1.png" alt=""/></a>
+            <HoverLink link="/category/frontity"><img src="http://codenawis.com/componentity/wp-content/uploads/2020/08/Group-17-1.png" alt="Frontity Ready to be copy pasted Components by Componentity.com"/></HoverLink>
           </Col>
         </Row>
 

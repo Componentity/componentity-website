@@ -13,30 +13,22 @@ const settings = {
       "state": {
         "theme": {
           "menu": [
-            // [
-            //   "Home",
-            //   "/"
-            // ],
-            // [
-            //   "Support Us",
-            //   "/support"
-            // ],
-            // [
-            //   "Contributing",
-            //   "/contributing"
-            // ],
+            [
+              "Home",
+              "/"
+            ],
+            [
+              "Support Us",
+              "/support"
+            ],
             [
               "Blog",
               "/category/blog"
             ],
             [
-              "Tailwind",
-              "/category/tailwindcss"
+              "Components",
+              "https://componentity.com/#getStarted"
             ],
-            [
-              "Tailwind Cards",
-              "/category/tailwindcss/cards"
-            ]
           ],
           "featured": {
             "showOnList": true,
@@ -49,14 +41,15 @@ const settings = {
       "name": "@frontity/wp-source",
       "state": {
         "source": {
-          "api": "https://codenawis.com/componentity/wp-json"
+          "api": "https://codenawis.com/componentity/wp-json",
         }
       }
     },
     "@frontity/tiny-router",
     "@frontity/html2react",
     "frontity-share",
-    "frontity-contact-form-7"
+    "frontity-contact-form-7",
+    "@frontity/head-tags"
   ]
 };
 
