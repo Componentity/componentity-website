@@ -6,12 +6,11 @@ const Tags = ({ state, tags }) => (
   <>
     {tags.length > 0 ? (
       <>
-        <b>Tags: </b>
-        {tags.map((tagId) => {
+        {tags.map((tagId, index) => {
           const tag = state.source.tag[tagId];
           return (
             <Wrapper key={tagId}>
-              <Link link={tag?.link}>{tag?.name}</Link>
+              <Link link={tag?.link}>{"#"+tag?.name}</Link>
             </Wrapper>
           );
         })}
@@ -23,13 +22,12 @@ const Tags = ({ state, tags }) => (
 export default connect(Tags);
 
 const Wrapper = styled.span`
-  display: inline;
+  display: inline-block;
   margin-right: .5rem;
   & a {
     color: #dc3545;
     font-weight: 500;
     font-size: 1rem;
-    padding: 10px 0px 17px;
   }
   a:hover {
       transition: all .5s;

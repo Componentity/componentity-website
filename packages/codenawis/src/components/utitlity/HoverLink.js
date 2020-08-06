@@ -2,10 +2,10 @@ import React from 'react'
 import Link from '../link';
 import { styled } from 'frontity';
 
-const HoverLink = ({children, link}) => {
+const HoverLink = ({children, link, className}) => {
     return (
         <HoverLinkCss>
-            <Link link={link}>
+            <Link className={className} link={link}>
                 {children}
             </Link>
         </HoverLinkCss>
@@ -13,8 +13,8 @@ const HoverLink = ({children, link}) => {
 }
 
 const HoverLinkCss = styled(Link)`
-  a, a:visted {
-    color: black !important;
+  a {
+    color: black;
   }
   :hover {
     transition: all .5s;

@@ -1,9 +1,9 @@
 import React from 'react'
 import {styled} from 'frontity';
 
-const FlexCenter = ({children, direction="row"}) => {
+const FlexCenter = ({children, className}) => {
     return (
-        <FlexCenterCss className={direction}>
+        <FlexCenterCss className={className}>
             {children}
         </FlexCenterCss>
     )
@@ -18,7 +18,6 @@ const FlexCenterCss = styled.div`
   justify-content: center;
   &.column {
     flex-direction: column;
-    justify-content: center;
   }
   &.align-center {
     align-items: center;

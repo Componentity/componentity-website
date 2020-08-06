@@ -1,11 +1,10 @@
 import React, { useEffect } from "react";
-import { connect, styled, Head } from "frontity";
+import { connect, styled } from "frontity";
 import List from "./list";
 import Comments from "./comments";
 import Tags from "./meta/tags";
 import Author from "./meta/author";
 import PubDate from "./meta/date";
-import AuthorBox from "./meta/authorBox";
 import Container from "./utitlity/Container";
 import Avatar from "./utitlity/avatar";
 import FlexBetween from "./utitlity/FlexBetween";
@@ -22,13 +21,11 @@ const Post = ({ state, actions, libraries }) => {
   // Get the html2react component.
   const Html2React = libraries.html2react.Component;
   
-  const url = state.frontity.url;
-
   // install frontity-share package (Developed by @mymakarim) 
   // use it from the libraries' fills
   const SharingButtons = libraries.fills.share.SharingButtons;
 
-  // end share package as library
+  // end share package as library 
   /**
    * Once the post has loaded in the DOM, prefetch both the
    * home posts and the list component so if the user visits
@@ -86,12 +83,6 @@ const Post = ({ state, actions, libraries }) => {
 
         </FlexBetween>
       </Content>
-      {/* Author Box */}
-      <MY2>
-        {data.isPost && (
-            <AuthorBox author={author} />
-        )}
-      </MY2>
       
       <br/>
       <br/>

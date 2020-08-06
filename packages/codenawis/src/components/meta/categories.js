@@ -6,7 +6,7 @@ const Categories = ({ state, cats }) => (
   <>
     {cats.length > 0 ? (
       <Wrapper>
-          {" in "}
+        <b>Categories: </b>
         {cats.map((catId, index) => {
           const isLast = !!(cats.length === index + 1);
           const cat = state.source.category[catId];
@@ -25,15 +25,15 @@ const Categories = ({ state, cats }) => (
 export default connect(Categories);
 
 const Wrapper = styled.span`
-  display: inline;
-  & a {
-    color: #dc3545;
-    font-weight: 600;
-    font-size: 1rem;
-    padding: 10px 0px 17px;
-  }
-  a:hover {
-    transition: all .5s;
-    color:black;
-  }
+    display: inline-block;
+    margin-right: .5rem;
+    & a {
+      color: #dc3545;
+      font-weight: 500;
+      font-size: 1rem;
+    }
+    a:hover {
+        transition: all .5s;
+        color:black;
+    }
 `;

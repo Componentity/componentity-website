@@ -36,22 +36,23 @@ const Comments = ({ libraries, state }) => {
                     {comments.length > 0 && (
                         <>
                             {comments.map(item => {
-                                console.log("Comment", item);
                                 const date = new Date(item.date);
                                 return (
                                     <SingleComment key={item.id}>
-                                        <FlexCenter>
-                                            <Avatar src={item.author_avatar_urls[96]} alt=""/>
-                                            <div>
-                                                <AuthorName>{item.author_name}</AuthorName>
-                                                <small>{date.toDateString()}</small>
-                                            </div>
-                                        </FlexCenter>
+                                        <FlexCenter className="column align-start">
+                                            <FlexCenter>
+                                                <Avatar src={item.author_avatar_urls[96]} alt=""/>
+                                                <div>
+                                                    <AuthorName>{item.author_name}</AuthorName>
+                                                    <small>{date.toDateString()}</small>
+                                                </div>
+                                            </FlexCenter>
 
-                                        <SingleCommentContent dangerouslySetInnerHTML={{
-                                            __html: item.content.rendered
-                                        }}
-                                        />
+                                            <SingleCommentContent dangerouslySetInnerHTML={{
+                                                __html: item.content.rendered
+                                            }}
+                                            />
+                                        </FlexCenter>
                                     </SingleComment>
                                 )
                             })}
@@ -80,7 +81,7 @@ const SingleComment = styled.div`
   -webkit-border-radius: 3px;
   border-radius: 3px;
   margin: 10px 0;
-  padding: 10px;
+  padding: 30px;
 `;
 
 const AuthorName = styled.b`
@@ -89,7 +90,5 @@ const AuthorName = styled.b`
 
 const SingleCommentContent = styled.div`
   font-size: 0.9em;
-  p {
-    margin: 7px 0;
-  }
+  margin-top: 10px;
 `;
