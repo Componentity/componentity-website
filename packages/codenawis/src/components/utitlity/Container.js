@@ -12,8 +12,7 @@ const ContainerWrapper = styled.div`
   width: 100%;
   padding-right: 15px;
   padding-left: 15px;
-  margin-right: auto;
-  margin-left: auto;
+  margin:auto;
   padding-top: 10px;
   overflow: hidden;
   @media (min-width: 576px) {

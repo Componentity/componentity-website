@@ -20,5 +20,9 @@ const ULCss = styled.ul`
   li {
     margin-bottom: 10px;
   }
+  li:hover {
+    margin-left: 10px;
+    transition: all .5s;
+  }
 `;
 export default UL

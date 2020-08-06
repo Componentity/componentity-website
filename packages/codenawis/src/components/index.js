@@ -104,6 +104,9 @@ const globalStyles = css`
     small {
       color: #efefef;
     }
+    iframe {
+      background-color: #aeaeae !important;
+    }
   }
 `;
 

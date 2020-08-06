@@ -90,19 +90,13 @@ const ComponentsPage = ({ state }) => {
                   </Sidebar>
               </Col>
               <Col className="m9">
-                <Container>
-                  <Row>
                     {data.items.map(({ type, id }) => {
                       const item = state.source[type][id];
                     // Render one Item component for each one.
                       return (
-                        <Col className="m12">
                           <ListItemNoImage key={item.id} item={item} />
-                        </Col>
                       );
-                    })} 
-                  </Row>
-                </Container>
+                    })}
               </Col>
         </Row>
   );

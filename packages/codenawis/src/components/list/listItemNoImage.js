@@ -8,7 +8,7 @@ import Hr from "../utitlity/Hr";
 const ListItemNoImage = ({ state, item, libraries}) => {
     const Html2React = libraries.html2react.Component;
   return (
-            <div className="mb-2 border-0">
+            <ListItemCss>
               <HoverLink link={item.link}>
                 <Title dangerouslySetInnerHTML={{ __html: item.title.rendered }} ></Title>
               </HoverLink>
@@ -20,12 +20,15 @@ const ListItemNoImage = ({ state, item, libraries}) => {
               { item.categories && <Categories cats={item.categories} /> }
               <br/>
               <Hr />
-            </div>
+            </ListItemCss>
   );
 };
 
 const Title = styled.h2`
     color: #9B5DE5;
+`;
+const ListItemCss = styled.div`
+    margin-bottom: 50px;
 `;
 // Connect the Item to gain access to `state` as a prop
 export default connect(ListItemNoImage);

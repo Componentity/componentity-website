@@ -42,6 +42,9 @@ const settings = {
       "state": {
         "source": {
           "api": "https://codenawis.com/componentity/wp-json",
+          params: {
+            per_page: 5
+          },
         }
       }
     },

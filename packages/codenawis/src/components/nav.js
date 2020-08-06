@@ -33,7 +33,7 @@ position: relative;
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
-    align-items: left;
+    align-items: start;
     padding: .5rem 1rem;
 padding-bottom: 0!important;
 display: none;
@@ -56,7 +56,6 @@ width: 100%;
 
 const NavUl = styled.ul`
     flex-direction: row;
-    margin-right: auto!important;
     display: flex;
     flex-direction: row;
     padding-left: 0;
@@ -65,6 +64,9 @@ const NavUl = styled.ul`
     margin-top: 0;
     color: #aaa;
 
+    .ml-auto {
+      margin-left: auto;
+    }
     li {
       display: block;
       padding-bottom: .5rem;
