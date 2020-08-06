@@ -15,8 +15,10 @@ const Header = ({ state }) => {
             <Logo />
           </Link>
           <Nav />
-          <a target="_blank" href="https://codepen.io/componentity"><b>CodePen</b></a>&nbsp;|&nbsp;
-          <a target="_blank" href="https://github.com/codenawis/componentity">Github</a>
+          <span>
+            <a target="_blank" href="https://codepen.io/componentity"><b>CodePen</b></a>&nbsp;|&nbsp;
+            <a target="_blank" href="https://instagram.com/componentity">Instagram</a>
+          </span>
         </FlexBetweenCss>
         <MobileMenu />
       </Container>
