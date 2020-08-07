@@ -65,6 +65,7 @@ const Input = styled.input`
         background-color: rgb(155, 93, 229, .2);
     }
 `;
+
 const Button = styled.button` 
     padding: 15px 20px;
     border: 0;
