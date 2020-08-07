@@ -72,7 +72,7 @@ const globalStyles = css`
   }
   a:hover {
     text-decoration: none;
-    color: #9B5DE5;
+    color: #9B5DE5 !important;
     transition: all .5s;
   }
   .bg-light {

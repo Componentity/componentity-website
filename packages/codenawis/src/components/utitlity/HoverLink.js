@@ -16,7 +16,7 @@ const HoverLinkCss = styled(Link)`
   a {
     color: black;
   }
-  :hover {
+  a:hover a {
     transition: all .5s;
     color: #9B5DE5 !important;
     text-decoration: none;

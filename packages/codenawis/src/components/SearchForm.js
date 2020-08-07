@@ -54,6 +54,8 @@ const Form = styled.form`
 const Input = styled.input`
     border: 0;
     padding:10px;
+    background-color: #F9FAFB;
+    min-width: 200px;
     width: 100%;
     :focus {
         border: 0;

@@ -1,5 +1,5 @@
 import React from "react";
-import { connect, styled } from "frontity";
+import { connect, styled, keyframes } from "frontity";
 import Container from './utitlity/Container'
 import Row from './utitlity/Row'
 import Col from './utitlity/Col'
@@ -10,9 +10,6 @@ import SectionTitle from './utitlity/SectionTitle'
 import FlexCenter from "./utitlity/FlexCenter";
 
 const Home = ({ state }) => {
-  const data = state.source.get(state.router.link);
-
-
   return (
     <>
     <Container>
@@ -45,9 +42,20 @@ const Home = ({ state }) => {
                   </FlexCenter>
               </Col>
               <Col className="m6">
-                <img src="http://codenawis.com/componentity/wp-content/uploads/2020/08/Group-13.png" alt=""/>
+                  <FlexCenter>
+                    <Animate className="w-550 RightToLeft">
+                      <img src="http://codenawis.com/componentity/wp-content/uploads/2020/08/3zMk-2.gif" alt="Componentity-Thousands of components ready to be copy pasted"/>
+                    </Animate>
+                    <Animate className="w-550 LargeToSmall">
+                      <img src="http://codenawis.com/componentity/wp-content/uploads/2020/08/img1.png" alt="Componentity-Thousands of components ready to be copy pasted"/>
+                    </Animate>
+                  </FlexCenter>
               </Col>
         </Row>
+        <br/>
+        <br/>
+        <br/>
+        <br/>
     </Container>
     <Clippy id="getStarted">
       <Container classes="py-10">
@@ -102,6 +110,9 @@ const Home = ({ state }) => {
 
       </Container>
     </Clippy>
+    <br/>
+    <br/>
+    <br/>
     </>
   );
 };
@@ -114,4 +125,57 @@ const Clippy = styled.div`
   }
   width: 100%;
   background-color: #F9FAFB;
+  position: relative;
+  top: -50px;
+  z-index: 1000;
+`;
+
+const RightToLeft = keyframes`
+  0% {
+    opacity: 0.5;
+    transform: translateX(2000px) translateY(150px) scale(.5);
+  }
+  100% {
+    opacity: 1;
+    transform: translateX(0%) translateY(80%) scale(1.5);
+    z-index: 1;
+  }
+`;
+const LargeToSmall = keyframes`
+  0% {
+    opacity: 0 !important;
+    transform: translateX(200px) scale(100);
+  }
+  100% {
+    opacity: 1;
+    transform: translateX(-15%) translateY(10%) scale(1.3);
+  }
+`;
+
+// Add the animation to the styled component.
+const Animate = styled.div`
+  opacity: 0;
+  margin-left: auto;
+  margin-right: 0;
+  &.RightToLeft {
+    animation: ${RightToLeft} 1s linear;
+    animation-delay: .5s;
+    animation-fill-mode: forwards;
+  }
+  &.LargeToSmall {
+    animation: ${LargeToSmall} 1s linear;
+    animation-fill-mode: forwards;
+    animation-fill-mode: forwards;
+  }
+  &.w-550 {
+    width: 550px;
+    height: auto;
+    @media (max-width: 576px) {
+      width: 200px !important;
+    }
+    img {
+      border-radius: 3px;
+      box-shadow: 0 0 20px #eee;
+    }
+  }
 `;

@@ -5,6 +5,7 @@ import Nav from "./nav";
 import MobileMenu from "./menu";
 import Container from './utitlity/Container'
 import Logo from './utitlity/Logo'
+import SearchForm from './SearchForm';
 
 const Header = ({ state }) => {
   return (
@@ -15,10 +16,7 @@ const Header = ({ state }) => {
             <Logo />
           </Link>
           <Nav />
-          <span>
-            <a target="_blank" href="https://codepen.io/componentity"><b>CodePen</b></a>&nbsp;|&nbsp;
-            <a target="_blank" href="https://instagram.com/componentity">Instagram</a>
-          </span>
+          <SearchForm />
         </FlexBetweenCss>
         <MobileMenu />
       </Container>

@@ -23,10 +23,10 @@ const List = ({ state }) => {
 
       {/* Iterate over the items of the list. */}
       <W100>
-          {data.route === '/' 
+          {data.route === '/' && !data.isSearch
           ? <Home />
           :<Container>
-            
+          
       {/* If the list is a taxonomy, we render a title. */}
       {data.isTaxonomy && (
         <Header>
