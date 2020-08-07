@@ -32,7 +32,7 @@ const SearchForm = ({ state, actions, libraries }) => {
 
   return (
     <Form role="search" aria-label="404 not found" onSubmit={handleSubmit}>
-      <Input type="search" defaultValue={searchQuery} placeholder="Search ..." ref={inputRef} />
+      <Input type="search" defaultValue={searchQuery} placeholder="What are you looking for?" ref={inputRef} />
       <Button type="submit"> Search </Button>
     </Form>
   );
@@ -53,16 +53,23 @@ const Form = styled.form`
 
 const Input = styled.input`
     border: 0;
-    padding:10px;
+    padding: 15px 20px;
     background-color: #F9FAFB;
-    min-width: 200px;
+    min-width: 280px;
     width: 100%;
+    transition: all .5s;
     :focus {
         border: 0;
         outline: 0;
+        transition: all .5s;
+        background-color: rgb(155, 93, 229, .2);
+        color: white;
     }
 `;
 const Button = styled.button` 
-    padding: 10px 20px;
+    padding: 15px 20px;
     border: 0;
+    color: white;
+    font-weight: 600;
+    background-color: #9B5DE5;
 `;
