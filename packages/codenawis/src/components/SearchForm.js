@@ -63,7 +63,6 @@ const Input = styled.input`
         outline: 0;
         transition: all .5s;
         background-color: rgb(155, 93, 229, .2);
-        color: white;
     }
 `;
 const Button = styled.button` 
