@@ -1,6 +1,5 @@
 import React from "react";
 import { connect } from "frontity";
-import Container from './utitlity/Container'
 import Row from './utitlity/Row'
 import Col from './utitlity/Col'
 import UL from './utitlity/UL'
@@ -17,7 +16,7 @@ const ComponentsPage = ({ state }) => {
   return (
         <Row>
               <Col className="m3">
-                  <Sidebar className="bg-light">
+                  <Sidebar>
                     <UL>
                         <li>
                             <b>TEMPLATES</b>

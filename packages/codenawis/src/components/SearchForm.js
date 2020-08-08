@@ -55,7 +55,7 @@ const Input = styled.input`
     border: 0;
     padding: 15px 20px;
     background-color: #F9FAFB;
-    min-width: 280px;
+    min-width: 250px;
     width: 100%;
     transition: all .5s;
     :focus {

@@ -6,6 +6,7 @@ import Container from '../utitlity/Container';
 import Row from '../utitlity/Row';
 import Col from '../utitlity/Col';
 import UL from '../utitlity/UL';
+import Sidebar from '../utitlity/Sidebar';
 import HoverLink from '../utitlity/HoverLink';
 import FlexCenter from '../utitlity/FlexCenter';
 import Home from '../home'
@@ -15,9 +16,6 @@ import {categoryWidgets} from '../../components/utitlity/config/homepageSections
 const List = ({ state }) => {
   // Get the data of the current list.
   const data = state.source.get(state.router.link);
-
-  console.log(data);
-
   return (
     <>
 
@@ -113,9 +111,3 @@ const Bold = styled.b`
 const W100 = styled.div`
   width: 100%;
 `;
-
-const Sidebar = styled.div`
-    padding: 30px 20px;
-    min-height: 100vh;
-`;
-

@@ -14,7 +14,6 @@ const ContainerWrapper = styled.div`
   padding-left: 15px;
   margin:auto;
   padding-top: 10px;
-  overflow: hidden;
   @media (min-width: 576px) {
     max-width: 540px;
   }
