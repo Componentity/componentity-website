@@ -27,7 +27,7 @@ const Wrapper = styled.span`
   & a {
     color: #dc3545;
     font-weight: 500;
-    font-size: 1rem;
+    font-size: .7rem;
   }
   a:hover {
       transition: all .5s;

@@ -13,6 +13,6 @@ const RowCss = styled.div`
   flex-wrap: wrap;
   margin-right: -15px;
   margin-left: -15px;
-  justify-content: space-between;
+  justify-content: flex-start;
 `;
 export default Row

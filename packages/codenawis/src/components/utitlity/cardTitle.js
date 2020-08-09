@@ -11,4 +11,5 @@ export default CardTitle;
 const TitleCss = styled.h2`
   font-weight: 500;
   font-size: 1rem;
+  margin-bottom: 0px;
 `;

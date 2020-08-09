@@ -1,6 +1,6 @@
 import React from "react";
 import { connect, styled, decode } from "frontity";
-import ListItemNoImage from "./listItemNoImage";
+import ListItem from "./list-item";
 import Pagination from "./pagination";
 import Container from '../utitlity/Container';
 import Row from '../utitlity/Row';
@@ -52,15 +52,17 @@ const List = ({ state }) => {
       ) : 
         <Row>
           <Col className="m9">
-          {data.items.map(({ type, id }) => {
-            const item = state.source[type][id];
-          // Render one Item component for each one.
-            return (
-              <Col className="m12">
-                <ListItemNoImage key={item.id} item={item} />
-              </Col>
-            );
-          })} 
+            <Row>
+              {data.items.map(({ type, id }) => {
+                const item = state.source[type][id];
+              // Render one Item component for each one.
+                return (
+                  <Col className="m4">
+                    <ListItem imageHeight="100" key={item.id} item={item} />
+                  </Col>
+                );
+              })}
+            </Row> 
           </Col>
           <Col className="m3">
             <Sidebar>

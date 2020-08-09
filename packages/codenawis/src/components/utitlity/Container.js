@@ -18,13 +18,13 @@ const ContainerWrapper = styled.div`
     max-width: 540px;
   }
   @media (min-width: 768px){
-    max-width: 720px;
+    max-width: 750px;
   }
   @media (min-width: 992px){
-    max-width: 960px;
+    max-width: 980px;
   }
-  @media (min-width: 1200px){
-     max-width: 1200px;
+  @media (min-width: 1300px){
+     max-width: 1300px;
   }
   img {
     width: 100%;

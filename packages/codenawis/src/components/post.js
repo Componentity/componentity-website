@@ -62,10 +62,6 @@ const Post = ({ state, actions, libraries }) => {
             </FlexBetween>
           </MY2>
         )}
-        {/* Look at the settings to see if we should include the featured image */}
-        {state.theme.featured.showOnPost && (
-          <img src={state.source.attachment[post.featured_media]?.source_url} alt=""/>
-        )}
       </PostContainer>
 
       {/* Render the content using the Html2React component so the HTML is processed

@@ -5,8 +5,7 @@ import Article from "../utitlity/Article";
 import CardTitle from "../utitlity/cardTitle";
 import CardContent from "../utitlity/cardContent";
 import FeaturedMedia from "../featured-media";
-import PubDate from '../meta/date';
-import Author from '../meta/author';
+import Tags from '../meta/tags';
 
 /**
  * Item Component
@@ -17,11 +16,9 @@ import Author from '../meta/author';
  * - FeaturedMedia: the featured image/video of the post
  */
   const ListItem = ({ state, item, imageHeight }) => {
-  const author = state.source.author[item.author];
-  // Get the data of the post.
-
+  
   return (
-            <Article height={(parseInt(imageHeight) + 120) + "px"} className="mb-2">
+            <Article height={(parseInt(imageHeight) + 210) + "px"} className="mb-2">
                 <div>
                   <HoverLink link={item.link}>
                   {state.theme.featured.showOnList && (
@@ -33,12 +30,7 @@ import Author from '../meta/author';
                   <HoverLink link={item.link}>
                     <CardTitle title={item.title.rendered} />
                   </HoverLink>
-                    {/* If the post has an author, we render a clickable author text. */}
-                    {author && (
-                      <Author authorId={item.author} />
-                    )}
-                    &nbsp;-&nbsp;
-                    <PubDate post={item} />
+                  { item.tags && <Tags tags={item.tags} /> }
                 </CardContent>
             </Article>
   );

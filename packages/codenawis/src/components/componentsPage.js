@@ -6,7 +6,7 @@ import UL from './utitlity/UL'
 import Sidebar from './utitlity/Sidebar'
 import HoverLink from './utitlity/HoverLink'
 import FlexCenter from "./utitlity/FlexCenter";
-import ListItemNoImage from './list/listItemNoImage'
+import ListItem from './list/list-item'
 
 const ComponentsPage = ({ state }) => {
   const data = state.source.get(state.router.link);
@@ -89,13 +89,16 @@ const ComponentsPage = ({ state }) => {
                   </Sidebar>
               </Col>
               <Col className="m9">
+                <Row>
                     {data.items.map(({ type, id }) => {
                       const item = state.source[type][id];
-                    // Render one Item component for each one.
                       return (
-                          <ListItemNoImage key={item.id} item={item} />
+                          <Col className="m4">
+                            <ListItem imageHeight="100" key={item.id} item={item} />
+                          </Col>
                       );
                     })}
+                </Row>
               </Col>
         </Row>
   );
