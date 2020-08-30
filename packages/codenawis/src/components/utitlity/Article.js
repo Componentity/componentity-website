@@ -12,11 +12,10 @@ const Article = ({children, className, height}) => {
 }
 
 const ArticleCss = styled.div`
-  border: 1px solid #ddd;
+  border: .5px solid #F9FAFB;
   margin:0 auto;
   width: 100%;
-  background-color: white;
-  border-radius: 5px;
+  background-color: #F9FAFB;
   font-family: "Poppins", Roboto,
     "Droid Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
   

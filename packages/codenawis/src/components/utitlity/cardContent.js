@@ -10,8 +10,8 @@ const cardContent = ({children}) => {
 }
 
 const ContentCss = styled.div`
-  margin:0 1.5rem;
-  padding-bottom: 1.5rem;
+  margin:0 1rem;
+  padding-bottom: 1rem;
 `;
 
 export default cardContent

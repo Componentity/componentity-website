@@ -7,6 +7,7 @@ import ComponentsPage from '../componentsPage'
 import Row from '../utitlity/Row'
 import Col from '../utitlity/Col'
 import SidebarCategory from "../SidebarCategory";
+import SubCategoryPage from "../SubCategoryPage";
 
 const List = ({ state }) => {
   // Get the data of the current list.
@@ -43,16 +44,9 @@ const List = ({ state }) => {
       )}
 
       {data.isTaxonomy && data.taxonomy == "category" && data.route !== "/category/blog/" ? (
-        <Row>
-              <Col className="m3">
-                  <SidebarCategory />
-              </Col>
-              <Col className="m9">
-                <ComponentsPage />
-              </Col>
-          </Row>
-      ) : 
         <SubCategoryPage />
+      ) : 
+        <ComponentsPage />
       }
           </Container>
           }

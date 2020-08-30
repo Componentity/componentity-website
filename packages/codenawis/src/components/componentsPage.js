@@ -12,7 +12,7 @@ const ComponentsPage = ({ state }) => {
                       const item = state.source[type][id];
                       return (
                           <Col className="m4">
-                            <ListItem imageHeight="100" key={item.id} item={item} />
+                            <ListItem imageHeight="200" key={item.id} item={item} />
                           </Col>
                       );
                     })}

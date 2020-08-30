@@ -18,11 +18,11 @@ import Tags from '../meta/tags';
   const ListItem = ({ state, item, imageHeight }) => {
   
   return (
-            <Article height={(parseInt(imageHeight) + 210) + "px"} className="mb-2">
+            <Article height={(parseInt(imageHeight) + 100) + "px"} className="mb-2">
                 <div>
                   <HoverLink link={item.link}>
                   {state.theme.featured.showOnList && (
-                    <FeaturedMedia height={imageHeight} id={item.featured_media} />
+                    <FeaturedMedia height={imageHeight+"px"} id={item.featured_media} />
                   )}
                   </HoverLink>
                 </div>

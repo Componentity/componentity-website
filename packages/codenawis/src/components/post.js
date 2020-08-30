@@ -122,13 +122,16 @@ const MY2 = styled.div`
  * selectors to style that HTML.
  */
 const Content = styled.div`
-  max-width: 750px;
-  margin: 0 auto;
   color: rgba(12, 17, 43, 0.8);
   word-break: break-word;
 
   * {
-    max-width: 100%;
+    max-width: 850px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  iframe, .cp_embed_wrapper {
+    max-width: 1300px !important;
   }
 
   p {
