@@ -6,22 +6,30 @@ import UL from './utitlity/UL';
 import Sidebar from './utitlity/Sidebar';
 import HoverLink from './utitlity/HoverLink';
 import FlexCenter from './utitlity/FlexCenter';
+import Roundedpills from './utitlity/Roundedpills';
 import ListItem from "./list/list-item";
 
 const SubCategoryPage = ({state})=> {
     const data = state.source.get(state.router.link);
-    console.log("Data", data);
+    
     const [cat, setCat] = useState([]);
     useEffect(() => {
         async function fetchMyAPI() {
-          let response = await fetch('https://codenawis.com/componentity/wp-json/wp/v2/categories?parent='+data.id);
+          let response = await fetch('https://codenawis.com/componentity/wp-json/wp/v2/categories?per_page=50&parent='+data.id);
           response = await response.json();
-          console.log("Response", response);
-          setCat(response);
+
+          filterCat(response);
         }
         
         fetchMyAPI()
-      }, []);
+      });
+
+
+      const filterCat = (response)=>{
+        const filteredResponse = response.filter(res => res.count > 0);
+
+        setCat(filteredResponse);
+      }
 
     return(
         <Row>
@@ -36,8 +44,9 @@ const SubCategoryPage = ({state})=> {
                     return (
                       <li key={categoryWidget}>
                         <FlexCenter className="justify-start">
-                          <svg fill="#9B5DE5" className="arrow-right" height="10px" width="10px" aria-hidden="true" focusable="false" height="12px" data-prefix="fas" data-icon="chevron-left" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 512" data-fa-i2svg=""><path d="M34.52 239.03L228.87 44.69c9.37-9.37 24.57-9.37 33.94 0l22.67 22.67c9.36 9.36 9.37 24.52.04 33.9L131.49 256l154.02 154.75c9.34 9.38 9.32 24.54-.04 33.9l-22.67 22.67c-9.37 9.37-24.57 9.37-33.94 0L34.52 272.97c-9.37-9.37-9.37-24.57 0-33.94z"></path></svg>
+                            <svg fill="#9B5DE5" className="arrow-right" height="10px" width="10px" aria-hidden="true" focusable="false" height="12px" data-prefix="fas" data-icon="chevron-left" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 512" data-fa-i2svg=""><path d="M34.52 239.03L228.87 44.69c9.37-9.37 24.57-9.37 33.94 0l22.67 22.67c9.36 9.36 9.37 24.52.04 33.9L131.49 256l154.02 154.75c9.34 9.38 9.32 24.54-.04 33.9l-22.67 22.67c-9.37 9.37-24.57 9.37-33.94 0L34.52 272.97c-9.37-9.37-9.37-24.57 0-33.94z"></path></svg>
                             <HoverLink link={data.link+category}>{categoryWidget.name}</HoverLink>
+                            <Roundedpills count={categoryWidget.count}></Roundedpills>
                         </FlexCenter>
                       </li>
                     )

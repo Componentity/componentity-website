@@ -47,7 +47,7 @@ const Footer = ({ state }) => {
                       <a target="_blank" href="#">Paypal</a>
                     </li>
                     <li>
-                      <a target="_blank" href="#">Contribute</a>
+                      <a target="_blank" href="/contribute">Contribute</a>
                     </li>
                   </UL>
                 </Col>

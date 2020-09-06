@@ -21,18 +21,13 @@ const Theme = ({ state }) => {
     <>
       {/* Add some metatags to the <head> of the HTML. */}
       <Title />
-      <Head>
-        <meta name="description" content={state.frontity.description} />
-        <html lang="en" />
-        <link rel="icon" type="image/png" href="http://codenawis.com/componentity/wp-content/uploads/2020/08/componentity-fav.png"></link>
-      </Head>
-
+      
       {/* Add some global styles for the whole site, like body or a's. 
       Not classes here because we use CSS-in-JS. Only global HTML tags. */}
       <Global styles={globalStyles} />
 
       {/* Add the header of the site. */}
-        <Header />
+      <Header />
     
       {/* Add the main section. It renders a different component depending
       on the type of URL we are in. */}
@@ -107,7 +102,6 @@ const globalStyles = css`
     iframe {
       background-color: #aeaeae !important;
     }
-  }
 `;
 
 const Main = styled.div`

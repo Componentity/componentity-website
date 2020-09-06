@@ -1,33 +1,26 @@
 import { styled } from "frontity";
 
-const Container = ({children, classes}) => {
+const ContainerFull = ({children, classes, bgImage}) => {
 
     return (
-        <ContainerWrapper className={classes}>
+        <ContainerFullWrapper className={classes} bgImage={bgImage}>
             {children}
-        </ContainerWrapper>
+        </ContainerFullWrapper>
     )
 }
 
-const ContainerWrapper = styled.div`
+const ContainerFullWrapper = styled.div`
   width: 100%;
   padding-right: 15px;
   padding-left: 15px;
   margin:auto;
   padding-top: 10px;
-  
-  @media (min-width: 576px) {
-    max-width: 540px;
-  }
-  @media (min-width: 768px){
-    max-width: 750px;
-  }
-  @media (min-width: 992px){
-    max-width: 980px;
-  }
-  @media (min-width: 1200px){
-     max-width: 1200px;
-  }
+  width: 100%;
+
+  background-size: cover;
+  background-position: center;
+  background-image: url(${props => props.bgImage || ""});
+
   img {
     width: 100%;
   }
@@ -46,4 +39,4 @@ const ContainerWrapper = styled.div`
   }
 `;
 
-export default Container
+export default ContainerFull

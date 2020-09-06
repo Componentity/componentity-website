@@ -4,9 +4,6 @@ import Pagination from "./pagination";
 import Container from '../utitlity/Container';
 import Home from '../home'
 import ComponentsPage from '../componentsPage'
-import Row from '../utitlity/Row'
-import Col from '../utitlity/Col'
-import SidebarCategory from "../SidebarCategory";
 import SubCategoryPage from "../SubCategoryPage";
 
 const List = ({ state }) => {

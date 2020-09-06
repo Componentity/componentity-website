@@ -10,8 +10,13 @@ const Sidebar = ({children}) => {
 export default Sidebar
 
 const SidebarCss = styled.div`
-    position: sticky;
-    top: 20px;
     padding: 20px;
-    background-color: #F9FAFB;
+    padding-left: 30px;
+    background-color: #1d3557;
+    a {
+      color: white;
+    }
+    b {
+      color: white;
+    }
 `;
