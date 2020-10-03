@@ -1,0 +1,5 @@
+import { Settings } from "frontity/types";
+
+const settings: Settings = $settings$;
+
+export default settings;
